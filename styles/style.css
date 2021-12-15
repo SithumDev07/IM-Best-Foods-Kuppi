@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Monument',
+    src: url("./fonts/monument.otf" format('otf'))
+}
+
+@font-face {
+    font-family: 'Riesling',
+    src: url("./fonts/riesling.ttf" format('ttf'))
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #E6DFDF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 2rem 0 2rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+}
+
+.mx-auto {
+    margin: 0 auto 0 auto;
+}
+
+.logo-text {
+    font-family: 'Monument', sans-serif;
+    user-select: none;
+}
+
+.inner-logo {
+    color: #D31B27;
+}
+
+.links {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 6rem;
+}
+
+.links li {
+    list-style: none;
+    font-size: 1.15rem;
+    margin-right: 4rem;
+}
+
+.links li:first-child {
+    color: #D31B27;
+    font-weight: '800';
+}
+
+.cart-register {
+    display: flex;
+    align-items: center;
+    color: #404040;
+}
+
+.cart-register svg {
+    margin-right: 1.5rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home-content {
+    width: 40%;
+}
+
+.home-title {
+    font-size: 6vw;
+    font-family: 'Riesling';
+    letter-spacing: 0.4rem;
+    color: #2C2C2C;
+    line-height: 6rem;
+}
+
+.home-image {
+    position: relative;
+    flex: 1;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.home-image .doodle1 {
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+    z-index: -1;
+    transform: rotate(-35deg) scale(1.3);
+}
+
+.home-image .doodle2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.home-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.doubled-buttons {
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.doubled-buttons .red-button {
+    margin-right: 1.2rem;
+}
+
+.button-description {
+    margin-left: 1.3rem;
+    color:#2C2C2C;
+    user-select: none;
+    font-size: 0.8rem;
+}
+
+.rounded-btn {
+    border-radius: 45px;
+    border: 0;
+    cursor: pointer;
+    padding: 1.1rem 2.6rem 1.1rem 2.6rem;
+}
+
+.red-button {
+    background-color: #D31B27;
+    color: #E9E5E4;
+}
+
+.white-button {
+    background-color: #F2F2F2;
+    color: #2C2C2C;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .user-circle {
+    margin-bottom: 1rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #2C2C2C;
+    overflow: hidden;
+    margin-left: -1rem;
+}
+
+.review-users {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.user-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.cart-register svg {
+    cursor: pointer;
+}
+
+.foods {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8rem 0 6rem 0;
+}
+
+.food-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #F2F2F2;
+    padding: 5rem 1.8rem 2rem 1.8rem;
+    border-radius: 16%;
+    margin-right: 3.2rem;
+}
+
+.food-card h3 {
+    font-size: 1.6rem;
+}
+
+.food-card p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.food-card .price {
+    margin-top: 1.6rem;
+    font-size: 2rem;
+}
+
+.food-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    background-image: url('.././images/footer.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100vw !important;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
