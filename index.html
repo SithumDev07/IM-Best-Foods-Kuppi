@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IM Best Foods</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/singleFood.css">
 </head>
 <body>
     <header class="header">
@@ -32,11 +33,11 @@
                     <path d="M15.7729 9.30504V6.27304C15.7729 4.18904 14.0839 2.50004 12.0009 2.50004C9.91694 2.49104 8.21994 4.17204 8.21094 6.25604V6.27304V9.30504" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7422 21.0004H7.25778C4.90569 21.0004 3 19.0954 3 16.7454V11.2294C3 8.87937 4.90569 6.97437 7.25778 6.97437H16.7422C19.0943 6.97437 21 8.87937 21 11.2294V16.7454C21 19.0954 19.0943 21.0004 16.7422 21.0004Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <button class="red-button rounded-btn">Sign Up</button>
+                <button class="red-button rounded-btn" id="signup">Sign Up</button>
             </div>
         </nav>
     </header>
-    <main class="">
+    <main class="home-page afterLoad">
         <section class="home container mx-auto">
             <div class="home-content">
                 <h2 class="home-title">It's not just Food, It's an Experience.</h2>
@@ -127,6 +128,41 @@
             </div>
         </footer>
     </main>
+    <div class="product-preload beforeLoad"></div>
+    <div class="product-preload-yellow beforeLoad"></div>
+    <section class="product-page beforeLoad">
+        <div class="detail-conatiner">
+            <div class="selected-food-image">
+                <img src="./images/food4.png" alt="Potgrasso Food Image">
+            </div>
+            <div class="food-content">
+                <h1>Argular Salad</h1>
+                <p class="food-ingredients">with Green Apple, Goat cheese and Salmon</p>
+                <div class="food-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minima recusandae quaerat labore consequuntur officiis, harum ipsam necessitatibus sequi optio omnis consequatur voluptatibus quas ratione perspiciatis eos unde quisquam voluptatum placeat? Deleniti, eaque consectetur? Corrupti, pariatur quae voluptatibus nisi debitis nam voluptatem consectetur atque quas a iste officiis ducimus quam laborum, eum ipsa soluta laudantium, aliquam doloribus odio? Magnam eveniet, at architecto doloribus facilis minima.
+                </div>
+                <div class="kal-counter">
+                    <div class="kal">
+                        <p>Calories</p>
+                        <h4 class="nutrion-counter-values">103Kal</h4>
+                    </div>
+                    <div class="fat">
+                        <p>Fat</p>
+                        <h4 class="nutrion-counter-values">10g</h4>
+                    </div>
+                    <div class="Carbs">
+                        <p>Carbs</p>
+                        <h4 class="nutrion-counter-values">45g</h4>
+                    </div>
+                </div>
+                <button class="add-to-cart">
+                    <span>Rs.350</span>
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </section>
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/product-opener.js"></script>
 </body>
 </html>
