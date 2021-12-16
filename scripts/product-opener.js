@@ -35,25 +35,4 @@ const foodsContainer = document.querySelector('.foods')
 
 
 //* Animations
-const signup = document.querySelector('#signup')
 
-const main = document.querySelector('main')
-const preloader = document.querySelector('.product-preload')
-const productPage = document.querySelector('.product-page')
-const preloaderYellow = document.querySelector('.product-preload-yellow')
-
-signup.addEventListener('click', () => {
-
-    main.classList.toggle('beforeLoadLeft')
-    main.classList.toggle('afterLoad')
-    
-    preloader.classList.toggle('beforeLoad');
-    preloader.classList.toggle('afterLoad')
-
-    productPage.classList.toggle('beforeLoad')
-    productPage.classList.toggle('afterLoad')
-
-    preloaderYellow.classList.toggle('beforeLoad')
-    preloaderYellow.classList.toggle('afterLoad')
-
-})

@@ -7,6 +7,7 @@
     <title>IM Best Foods</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/singleFood.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header class="header">
@@ -33,7 +34,17 @@
                     <path d="M15.7729 9.30504V6.27304C15.7729 4.18904 14.0839 2.50004 12.0009 2.50004C9.91694 2.49104 8.21994 4.17204 8.21094 6.25604V6.27304V9.30504" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7422 21.0004H7.25778C4.90569 21.0004 3 19.0954 3 16.7454V11.2294C3 8.87937 4.90569 6.97437 7.25778 6.97437H16.7422C19.0943 6.97437 21 8.87937 21 11.2294V16.7454C21 19.0954 19.0943 21.0004 16.7422 21.0004Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <button class="red-button rounded-btn" id="signup">Sign Up</button>
+                <button class="rounded-btn signup-button" id="signup">
+                    <div class="signup-original button-afterLoad">
+                        <p>Sign Up</p>
+                    </div>
+                    <div class="back-content button-beforeLoad">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 19L8.5 12L15.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Back                            
+                    </div>
+                </button>
             </div>
         </nav>
     </header>
@@ -122,7 +133,7 @@
             <div class="footer-content">
                 <ul class="footer-links">
                     <li>
-                        <a href="">Home</a>
+                        <!-- <a href="">Home</a> -->
                     </li>
                 </ul>
             </div>
@@ -132,6 +143,11 @@
     <div class="product-preload-yellow beforeLoad"></div>
     <section class="product-page beforeLoad">
         <div class="detail-conatiner">
+            <button class="product-page-back">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 19L8.5 12L15.5 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
             <div class="selected-food-image">
                 <img src="./images/food4.png" alt="Potgrasso Food Image">
             </div>
@@ -162,7 +178,32 @@
             </div>
         </div>
     </section>
+    <div class="product-preload-green beforeLoad"></div>
+    <section class="signup-form beforeLoad">
+        <div class="mx-auto form-container">
+            <form class="form-content" accept="" method="" onsubmit="">
+                <div class="logo">
+                    <h1 translate="no" class="translate-no logo-text">IM <span class="inner-logo">Best</span> Foods</h1>
+                </div>
+                <p for="username">username or email</p>
+                <input type="text" name="username" placeholder="username or email" id="username" class="username-input">
+                <p for="password">password</p>
+                <input type="password" name="password" placeholder="password" id="password" class="password-input">
+                <input type="submit" id="login-submit" value="login">
+                <div class="form-bottom">
+                    <a href="/forgot-password">forgot password?</a>
+                    <a href="/register">Don't have an account? <span class="register-link">Register</span></a>
+                </div>
+            </form>
+            <div class="form-image">
+                <img src="./images/formside.png" alt="Form Advertising Image">
+            </div>
+        </div>
+    </section>
+    <script src="./data/data.js"></script>
     <script src="./scripts/app.js"></script>
     <script src="./scripts/product-opener.js"></script>
+    <script src="./scripts/signup-form-opener.js"></script>
+    <script src="./scripts/product-page-jquery.js"></script>
 </body>
 </html>
