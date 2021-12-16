@@ -16,7 +16,6 @@ const prices = [350.00, 485.00, 750.00, 445.00]
 
 const images = ["./images/food1.png", "./images/food2.png", "./images/food3.png", "./images/food4.png"]
 
-const foodsContainer = document.querySelector('.foods')
 
 
 // for(let i = 0; i < 4; i++){

@@ -33,11 +33,3 @@ signup.addEventListener('click', () => {
     buttonAfterContent.classList.toggle('button-afterLoad')
 
 })
-
-
-const myObj = {
-    name: "MIT",
-    method: () => {
-        console.log(this);
-    }
-}
