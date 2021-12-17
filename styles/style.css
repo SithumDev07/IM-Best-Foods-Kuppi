@@ -17,6 +17,10 @@ html {
     src: url("./fonts/riesling.ttf" format('ttf'))
 }
 
+input {
+    caret-color: #D31B27;
+}
+
 a {
     color: unset;
     text-decoration: none;
@@ -81,6 +85,38 @@ nav {
 .cart-register svg {
     margin-right: 1.5rem;
 }
+
+.customer-profile-wrapper {
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 1.6rem;
+}
+
+.customer-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 0;
+    background: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    
+    /* will-change: transform; */
+    transition: transform 1.2s cubic-bezier(1, 0, 0, 1);
+    transition-delay: 1s;
+    transform: translateX(100%);
+    
+}
+
+.loadCustomerProfile {
+    transform: translateX(0%);
+}
+
 
 .home {
     display: flex;

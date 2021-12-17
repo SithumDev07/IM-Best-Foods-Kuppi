@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +14,8 @@
     <link rel="stylesheet" href="./styles/singleFood.css">
     <link rel="stylesheet" href="./styles/404.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.1.1/dist/jdenticon.min.js" async integrity="sha384-l0/0sn63N3mskDgRYJZA6Mogihu0VY3CusdLMiwpJ9LFPklOARUcOiWEIGGmFELx" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -48,6 +54,11 @@
                         Back
                     </div>
                 </button>
+                <div class="customer-profile-wrapper">
+                    <button class="customer-profile">
+                        <svg width="50" height="50" data-jdenticon-value="user128"></svg>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>

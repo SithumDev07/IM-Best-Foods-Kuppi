@@ -26,5 +26,10 @@ $(document).ready(function () {
          
    })
 
+   $('#change-to-signup').click(function() {
+      AnimationHandler($('.login-form'));
+      AnimationHandler($('.signup-form'));
+   })
+
 
 })
