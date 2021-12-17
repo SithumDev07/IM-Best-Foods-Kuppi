@@ -55,6 +55,11 @@
     color: #D31B27;
 }
 
+#change-to-signup {
+    font-size: 0.8rem;
+    color: #D31B27;
+}
+
 .form-image {
     flex: 1;
     width: 100%;

@@ -3,10 +3,10 @@
 require_once('../configuration/config.php');
 require_once('../operations/functions.php');
 
-if ($_GET['username']) {
+if ($_POST['username']) {
 
-    $username = $_GET['username'];
-    $password = $_GET['password'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     //* Server side validations
     if (empty($username || $password)) {
@@ -36,6 +36,10 @@ if ($_GET['username']) {
                 } else if ($passCheck == true) {
                     session_start();
                     $_SESSION['sessionUser'] = $row['username'];
+
+                    $location = "Location: ../index.php?success=success";
+                    $location = str_replace(PHP_EOL, '', $location);
+                    header($location);
                     exit();
                 } else {
                     redirectWithError("wrong_password");
