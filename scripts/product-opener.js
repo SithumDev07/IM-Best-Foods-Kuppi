@@ -15,23 +15,3 @@ const descriptions = [
 const prices = [350.00, 485.00, 750.00, 445.00]
 
 const images = ["./images/food1.png", "./images/food2.png", "./images/food3.png", "./images/food4.png"]
-
-
-
-// for(let i = 0; i < 4; i++){
-
-//     const foodCard = document.createElement('div');
-//     foodCard.classList.add('food-card')
-//     foodCard.innerHTML = `
-//         <img src="${images[i]}" alt="Food Items" />
-//         <h3>${foodNames[i]}</h3>
-//         <p>With ${ingredients[i]}</p>
-//         <p class="price">Rs.${prices[i]}</p>
-//     `;
-//     foodsContainer.appendChild(foodCard)
-
-// }
-
-
-//* Animations
-

@@ -1,0 +1,24 @@
+.error {
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error h1 {
+    font-size: 4vw;
+    color: #383838;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    text-align: center;
+}
+
+.error p {
+    font-size: 2rem;
+    color: #D31B27;
+    margin-top: 6rem;
+    font-family: 'Montserrat';
+    text-align: center;
+}
