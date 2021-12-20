@@ -5,6 +5,7 @@ $(document).ready(function () {
       $(element).toggleClass('afterLoad')
    }
 
+
    //* Click Food Item
    $('.food-card').click(function() {
         
